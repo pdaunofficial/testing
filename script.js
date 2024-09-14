@@ -86,7 +86,7 @@ async function uploadFiles() {
     for (let i = 0; i < selectedFiles.length; i++) {
       const file = selectedFiles[i];
       let fileName = file.name;
-      let filePath = `${TARGET_DIRECTORY}/${fileName}`;
+      let filePath = `${TARGET_DIRECTORY}${fileName}`;
 
       // let filePath = `${TARGET_DIRECTORY}${fileName}`;
       let apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
