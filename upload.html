@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>File Upload</h1>
+        <div class="file-list" id="fileList"></div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <input type="file" id="fileInput" multiple style="display: none;">
+        <button class="upload-btn" id="uploadBtn" onclick="handleButtonClick()">
+            Choose and Upload Files
+            <span class="spinner" id="spinner" style="display: none;"></span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
