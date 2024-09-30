@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function encodeString(input) {
+    // Step 1: Convert the string to Base64
+    let base64Encoded = btoa(input);
+    
+    // Step 2: Reverse the Base64 string
+    let reversed = base64Encoded.split('').reverse().join('');
+    
+    // Step 3: Add some noise (e.g., add a character after each real character)
+    let noisyString = '';
+    for (let i = 0; i < reversed.length; i++) {
+        noisyString += reversed[i] + String.fromCharCode(65 + Math.floor(Math.random() * 26)); // A-Z random chars
+    }
+    
+    return noisyString;
+}
+
+let originalString = "HelloWorld";
+let encodedString = encodeString(originalString);
+console.log("Encoded String: " + encodedString);
+
+function decodeString(encoded) {
+    // Step 1: Remove the noise (remove every second character)
+    let cleanString = '';
+    for (let i = 0; i < encoded.length; i += 2) {
+        cleanString += encoded[i];
+    }
+    
+    // Step 2: Reverse the cleaned string
+    let reversed = cleanString.split('').reverse().join('');
+    
+    // Step 3: Decode Base64 to original string
+    let originalString = atob(reversed);
+    
+    return originalString;
+}
+
+let decodedString = decodeString(encodedString);
+console.log("Decoded String: " + decodedString);
+
+    </script>
+</body>
+</html>
