@@ -1,0 +1,12 @@
+version: 2.22.1
+files:
+  - url: Simplenote-linux-2.22.1-arm64.AppImage
+    sha512: kO+3lcbvRTDaV/gimGUikDPYaYDsb+y3YWVK76ctIL8rTkJ0KX+8KU4ga4HHSmmgVVwAbq9Wi2Eh5PbieWT31w==
+    size: 145344463
+    blockMapSize: 152347
+  - url: Simplenote-linux-2.22.1-arm64.deb
+    sha512: rs/JPDyjn/DN1D19FnQb3sE5Dj44IDAUXWYBCPhEIre6jvY+x5N3V8sUI2ChEY20K0TwhTk1QpO717ysB7M9iw==
+    size: 142820500
+path: Simplenote-linux-2.22.1-arm64.AppImage
+sha512: kO+3lcbvRTDaV/gimGUikDPYaYDsb+y3YWVK76ctIL8rTkJ0KX+8KU4ga4HHSmmgVVwAbq9Wi2Eh5PbieWT31w==
+releaseDate: '2024-07-18T01:26:25.468Z'
